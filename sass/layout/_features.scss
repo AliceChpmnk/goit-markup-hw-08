@@ -1,0 +1,66 @@
+.features {
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__item {
+
+        @media screen and (min-width: $tablet) {
+            width: calc((100% - 30px * 2) / 2);
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 270px;
+        }
+
+        &:not(:last-child) {
+            @media screen and (max-width: 767px) {
+                margin-bottom: 30px;
+            }
+        }
+
+        &::before {
+            display: block;
+            margin-bottom: 30px;
+            content: '';
+            height: 120px;
+            border-radius: 4px;
+            background-color: #F5F4FA;
+            background-size: 70px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    &__title {
+        @include onlyBottomMargins(10);
+
+        color: var(--title-text-color);
+        @include font(700, 14px, 1.14, 0.03em);
+        text-transform: uppercase;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
+
+    &__text {
+        @include onlyBottomMargins(0);
+        @include font(400, 14px, 1.71, 0.03em);
+    }
+}
+
+$icons: 'antenna', 'clock', 'diagram', 'astronaut';
+
+@each $iconName in $icons {
+    .features__item_svg_#{$iconName}::before {
+        background-image: url(../images/#{$iconName}.svg);
+    }
+}

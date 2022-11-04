@@ -1,0 +1,18 @@
+@mixin centeredFlex($type: flex) {
+        display: $type;
+        justify-content: center;
+        align-items: center;
+}
+
+@mixin font ($fw, $fs, $lh, $ls) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin onlyBottomMargins($bottom) {
+    margin-top: 0px;
+    margin-bottom: #{$bottom}px;
+}
+

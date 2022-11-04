@@ -1,0 +1,25 @@
+.subscribe-button {
+    padding: 10px 28px;
+    background-color: var(--accent);
+    color: var(--primary-bg);
+    @include font(700, 16px, 1.875, 0.06em);
+
+    transition: background-color var(--transition-dur-and-func);
+
+    &::after {
+            display: inline-block;
+            content: '';
+            margin-left: 10px;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url(../images/send.svg);
+        }
+    
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
+}

@@ -1,0 +1,18 @@
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    &_top-padding_none {
+            padding-top: 0;
+        }
+
+    &_theme_accent {
+        background: var(--background-accent);
+    }
+}
+

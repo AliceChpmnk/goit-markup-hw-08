@@ -1,0 +1,55 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 450px;
+    max-height: 609px;
+    width: 100%;
+    
+    transform: translate(-50%, -50%) scale(1);
+
+    @media screen and (min-width: $desktop) {
+        min-width: 528px;
+        min-height: 581px;
+    }
+    padding: 40px;
+    border-radius: 4px;
+    background-color: var(--primary-bg);
+
+    transition: transform var(--transition-dur-and-func);
+
+    .backdrop.is-hidden & {
+            transform: translate(-50%, -50%) scale(0.8);
+        }
+}
+
+.close-button {
+    @include centeredFlex();
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: transparent;
+
+    transition: border-color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        outline: none;
+        border-color: var(--accent);
+    }
+
+    &-icon {
+        transition: fill var(--transition-dur-and-func);
+
+        .close-button:hover &,
+        .close-button:focus & {
+            fill: var(--accent);
+        }
+    }
+}
