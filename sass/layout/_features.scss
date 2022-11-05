@@ -61,6 +61,6 @@ $icons: 'antenna', 'clock', 'diagram', 'astronaut';
 
 @each $iconName in $icons {
     .features__item_svg_#{$iconName}::before {
-        background-image: url(../images/#{$iconName}.svg);
+        background-image: url(../images/features/#{$iconName}.svg);
     }
 }

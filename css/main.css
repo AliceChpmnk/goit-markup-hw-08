@@ -758,7 +758,7 @@ body.modal-open {
 }
 .hero_background-image_team {
   background-color: var(--hero-background);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-background.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-mobile.jpg");
 }
 .hero__title {
   margin-top: 0px;
@@ -782,6 +782,50 @@ body.modal-open {
   }
 }
 
+/* 
+0px - 767px
+2x +
+*/
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero_background-image_team {
+    background-image: url("../../images/hero/hero-mobile@2x.jpg");
+  }
+}
+/* 
+768px +
+*/
+@media screen and (min-width: 768px) {
+  .hero_background-image_team {
+    background-image: url("../../images/hero/hero-tablet.jpg");
+  }
+}
+/* 
+768px +
+2x +
+*/
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero_background-image_team {
+    background-image: url("../../images/hero/hero-tablet@2x.jpg");
+  }
+}
+/* 
+1200px +
+1x
+*/
+@media screen and (min-width: 1200px) {
+  .hero_background-image_team {
+    background-image: url("../../images/hero/hero-desktop.jpg");
+  }
+}
+/* 
+1200px +
+2x +
+*/
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero_background-image_team {
+    background-image: url("../../images/hero/hero-desktop@2x.jpg");
+  }
+}
 @media screen and (min-width: 768px) {
   .features {
     display: flex;
@@ -845,19 +889,19 @@ body.modal-open {
 }
 
 .features__item_svg_antenna::before {
-  background-image: url(../images/antenna.svg);
+  background-image: url(../images/features/antenna.svg);
 }
 
 .features__item_svg_clock::before {
-  background-image: url(../images/clock.svg);
+  background-image: url(../images/features/clock.svg);
 }
 
 .features__item_svg_diagram::before {
-  background-image: url(../images/diagram.svg);
+  background-image: url(../images/features/diagram.svg);
 }
 
 .features__item_svg_astronaut::before {
-  background-image: url(../images/astronaut.svg);
+  background-image: url(../images/features/astronaut.svg);
 }
 
 .services__list {

@@ -220,12 +220,31 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="services__list list">
             <li class="services__item">
-              <img
-                src="./images/keyboard.jpg"
-                width="370"
-                alt="людина друкує на клавіатурі"
-                class="block-picture"
-              />
+              <picture>
+                <!-- Only desktop -->
+                <source
+                  srcset="
+                    ./images/servies/keyboard.webp     1x,
+                    ./images/services/keyboard@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/servies/keyboard.jpg     1x,
+                    ./images/services/keyboard@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  src="./images/services/keyboard.jpg"
+                  width="370"
+                  alt="людина друкує на клавіатурі"
+                  class="block-picture"
+                />
+              </picture>
               <div class="services__overlay">
                 <div class="services__text-thumb">
                   <p class="services__text">Десктопні додатки</p>
@@ -233,12 +252,31 @@
               </div>
             </li>
             <li class="services__item">
-              <img
-                src="./images/laptop.jpg"
+              <picture>
+                <!-- Only desktop -->
+                <source
+                  srcset="
+                    ./images/servies/laptop.webp     1x,
+                    ./images/services/laptop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/services/laptop.jpg     1x,
+                    ./images/services/laptop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                src="./images/services/laptop.jpg"
                 width="370"
                 alt="телефон у руці"
                 class="block-picture"
               />
+              </picture>
               <div class="services__overlay">
                 <div class="services__text-thumb">
                   <p class="services__text">Мобільні додатки</p>
@@ -246,8 +284,26 @@
               </div>
             </li>
             <li class="services__item">
-              <img
-                src="./images/tablet.jpg"
+              <picture>
+                <!-- Only desktop -->
+                <source
+                  srcset="
+                    ./images/servies/tablet.webp     1x,
+                    ./images/services/tablet@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/services/tablet.jpg     1x,
+                    ./images/services/tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                src="./images/services/tablet.jpg"
                 width="370"
                 alt="планшет з кольоровою палитрою"
                 class="block-picture"
@@ -268,12 +324,41 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team list">
             <li class="team__item">
-              <img
-                src="./images/IgorD.jpg"
+              <picture>
+                <!-- Desktop -->
+                <source
+                  srcset="
+                    ./images/team/demianenko-desktop.jpg    1x,
+                    ./images/team/demianenko-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <!-- Tablet -->
+                <source
+                  srcset="
+                    ./images/team/demianenko-tablet.jpg    1x,
+                    ./images/team/demianenko-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <!-- Mobiel -->
+                <source
+                  srcset="
+                    ./images/team/demianenko-mobile.jpg    1x,
+                    ./images/team/demianenko-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 280px)"
+                />
+
+                <img
+                src="./images/team/demianenko-mobile.jpg"
                 width="270"
                 alt="Ігор Дем'яненко"
                 class="block-picture team__picture"
               />
+              </picture>
               <div class="team__caption">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p lang="en" class="team__text">Product Designer</p>
@@ -346,12 +431,41 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/OlgaR.jpg"
-                width="270"
-                alt="Ольга Рєпіна"
-                class="block-picture team__picture"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  srcset="
+                    ./images/team/repina-desktop.jpg    1x,
+                    ./images/team/repina-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <!-- Tablet -->
+                <source
+                  srcset="
+                    ./images/team/repina-tablet.jpg    1x,
+                    ./images/team/repina-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <!-- Mobiel -->
+                <source
+                  srcset="
+                    ./images/team/repina-mobile.jpg    1x,
+                    ./images/team/repina-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 280px)"
+                />
+
+                <img
+                  src="./images/team/repina-mobile.jpg"
+                  width="270"
+                  alt="Ольга Рєпіна"
+                  class="block-picture team__picture"
+                />
+              </picture>
               <div class="team__caption">
                 <h3 class="team__title">Ольга Рєпіна</h3>
                 <p lang="en" class="team__text">Frontend Developer</p>
@@ -424,12 +538,41 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/MykolaT.jpg"
+              <picture>
+                <!-- Desktop -->
+                <source
+                  srcset="
+                    ./images/team/tarasov-desktop.jpg    1x,
+                    ./images/team/tarasov-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <!-- Tablet -->
+                <source
+                  srcset="
+                    ./images/team/tarasov-tablet.jpg    1x,
+                    ./images/team/tarasov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <!-- Mobiel -->
+                <source
+                  srcset="
+                    ./images/team/tarasov-mobile.jpg    1x,
+                    ./images/team/tarasov-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 280px)"
+                />
+
+                <img
+                src="./images/team/tarasov-mobile.jpg"
                 width="270"
                 alt="Микола Тарасов"
                 class="block-picture team__picture"
               />
+              </picture>
               <div class="team__caption">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p lang="en" class="team__text">Marketing</p>
@@ -502,12 +645,41 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/MyhailoY.jpg"
+              <picture>
+                <!-- Desktop -->
+                <source
+                  srcset="
+                    ./images/team/yermakov-desktop.jpg    1x,
+                    ./images/team/yermakov-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <!-- Tablet -->
+                <source
+                  srcset="
+                    ./images/team/yermakov-tablet.jpg    1x,
+                    ./images/team/yermakov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <!-- Mobiel -->
+                <source
+                  srcset="
+                    ./images/team/yermakov-mobile.jpg    1x,
+                    ./images/team/yermakov-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 280px)"
+                />
+
+                <img
+                src="./images/team/yermakov-mobile.jpg"
                 width="270"
                 alt="Михайло Єрмаков"
                 class="block-picture team__picture"
               />
+              </picture>
               <div class="team__caption">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p lang="en" class="team__text">UI Designer</p>
