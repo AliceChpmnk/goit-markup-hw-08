@@ -935,7 +935,7 @@ body.modal-open {
   text-transform: uppercase;
   color: var(--primary-bg);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .services {
     display: none;
   }
