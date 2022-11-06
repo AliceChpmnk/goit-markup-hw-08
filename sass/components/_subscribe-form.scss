@@ -36,5 +36,7 @@
 
 
 .footer__subscribe-form__input {
-    margin-right: 12px;
+    @media screen and (min-width: $desktop) {
+        margin-right: 12px;
+    }
 }
