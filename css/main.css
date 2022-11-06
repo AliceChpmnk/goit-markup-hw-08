@@ -304,8 +304,10 @@ body.modal-open {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer__subscribe-form__input {
-  margin-right: 12px;
+@media screen and (min-width: 1200px) {
+  .footer__subscribe-form__input {
+    margin-right: 12px;
+  }
 }
 
 .subscribe-button {
