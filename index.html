@@ -24,11 +24,11 @@
   <body>
     <header class="header">
       <div class="container header__container">
+        <!-- LOGO -->
+        <a href="./index.html" class="logo header__logo"
+          ><span class="logo__first-word">Web</span>Studio</a
+        >
         <nav class="header__nav-container">
-          <!-- LOGO -->
-          <a href="./index.html" class="logo header__logo"
-            ><span class="logo__first-word">Web</span>Studio</a
-          >
           <!-- MENU -->
           <ul class="site-nav site-nav-menu list">
             <li class="site-nav-menu__item">
@@ -47,28 +47,28 @@
               <a href="" class="link site-nav__menu-link">Контакти</a>
             </li>
           </ul>
-          <ul class="site-nav site-nav_contacts list">
-            <li class="site-nav__contacts-item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="link site-nav__contacts-link"
-              >
-                <svg class="site-nav__icons_svg_envelope">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="site-nav__contacts-item">
-              <a href="tel:+380961111111" class="link site-nav__contacts-link"
-                ><svg class="site-nav__icons_svg_smartphone">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
         </nav>
+        <ul class="site-nav site-nav_contacts list">
+          <li class="site-nav__contacts-item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="link site-nav__contacts-link"
+            >
+              <svg class="site-nav__icons_svg_envelope">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="site-nav__contacts-item">
+            <a href="tel:+380961111111" class="link site-nav__contacts-link"
+              ><svg class="site-nav__icons_svg_smartphone">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
 
         <!-- MOBILE MENU BUTTON -->
         <button
@@ -87,7 +87,7 @@
       </div>
 
       <!-- MOBILE MENU -->
-      <div class="mobile-menu" data-menu>
+      <div class="mobile-menu" data-menu id="mobile-menu">
         <div class="container mobile-menu__container">
           <button
             type="button"
@@ -228,7 +228,7 @@
                 <!-- Only desktop -->
                 <source
                   srcset="
-                    ./images/servies/keyboard.webp     1x,
+                    ./images/services/keyboard.webp    1x,
                     ./images/services/keyboard@2x.webp 2x
                   "
                   media="(min-width: 1200px)"
@@ -236,7 +236,7 @@
                 />
                 <source
                   srcset="
-                    ./images/servies/keyboard.jpg     1x,
+                    ./images/services/keyboard.jpg    1x,
                     ./images/services/keyboard@2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
@@ -260,7 +260,7 @@
                 <!-- Only desktop -->
                 <source
                   srcset="
-                    ./images/servies/laptop.webp     1x,
+                    ./images/services/laptop.webp    1x,
                     ./images/services/laptop@2x.webp 2x
                   "
                   media="(min-width: 1200px)"
@@ -292,7 +292,7 @@
                 <!-- Only desktop -->
                 <source
                   srcset="
-                    ./images/servies/tablet.webp     1x,
+                    ./images/services/tablet.webp    1x,
                     ./images/services/tablet@2x.webp 2x
                   "
                   media="(min-width: 1200px)"

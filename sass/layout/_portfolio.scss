@@ -3,6 +3,7 @@
     @media screen and (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
+        gap: 30px;
     }
 
        .title {
@@ -22,6 +23,7 @@
         }
 
         .caption {
+            flex-grow: 1;
             padding: 20px 24px;
             border-left: 1px solid #EEEEEE;
             border-bottom: 1px solid #EEEEEE;
@@ -29,15 +31,20 @@
         }
     
         .item {
+            display: flex;
 
-            @media screen and (min-width: $tablet){
-                width: calc((100% - 60px) / 2);
-                gap: 30px;
+            @media screen and (max-width: 767px) {
+                &:not(:last-child) {
+                        margin-bottom: 30px;
+                    }
+            }
+
+            @media screen and (min-width: $tablet) {
+                width: calc((100% - 30px) / 2);
             }
             
             @media screen and (min-width: $desktop){
                 width: calc((100% - 60px) / 3);
-                gap: 30px;
             }
         }
 
@@ -50,6 +57,8 @@
 }
 
 .portfolio-link {
+    display: flex;
+    flex-direction: column;
     transition: box-shadow var(--transition-dur-and-func);
 
     &:hover,
